@@ -17,6 +17,7 @@ body {
   background-color: #333;
   color: rgb(255 255 255 /0.7);
   font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
 }
 
 .grid-cards{
@@ -30,20 +31,21 @@ body {
 
 .card{
   display: inline-block;
-  position: sticky; 
+  position: relative;  
   border-radius: 1em;
   padding: 1.5em;
   width: 250px;
   height:300px;
   line-height: 1.25em;
   margin: 0 0.5em 1em;
+  vertical-align: top;
 }
 .card--double-width{
   width: 500px;
 }
 
 .card--double-height{
-  height: 620px;
+  height: 630px;
 }
 
 .card--violet{
@@ -58,6 +60,22 @@ body {
 }
 .card--blue-gray{
   background-color:#48556a;
+}
+
+.fourth__card,
+.fifth__card
+{
+  position: absolute;
+  top: 330px;
+}
+
+.fourth__card{
+  left: 0;
+}
+
+.fifth__card{
+  left: 270px;
+  
 }
 
 .card__header{
@@ -87,13 +105,14 @@ body {
   font-size: 1rem;
   z-index: 10;
   color: #fff;
+  font-weight: 600;
 }
 
 .card__title--black{
   color: #000;
 }
 
-.card__content{
+.card__text{
   position:relative;
   z-index: 10;
   font-size: 0.75rem;
